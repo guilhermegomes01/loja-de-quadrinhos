@@ -23,17 +23,21 @@ A aplicação irá atualizar automaticamente à medida que for feito alteraçõe
 
 ### Organização dos arquivos
 
-Há 5 Componentes dentro da pasta app/
+Há 5 Componentes dentro da pasta **app/**
 
 | Pasta | Detalhes |
 | ----- | -------- |
 |comics/| _Esse é o componente onde fica a página que contém todos os quadrinhos_ |
-|comics-detailq| _É o componente onde fica a página que contém os detalhes de um determinado quadrinho, de acordo com seu ID_ |
+|comics-detail/| _É o componente onde fica a página que contém os detalhes de um determinado quadrinho, de acordo com seu ID_ |
 |comics-releases/| _Nesse contém o componente onde fica a página que mostra os últimos lançamentos da semana_ |
 |header/| _É o componente que contém a área onde fica a imagem principal e a navbar_ |
 |home/| _É o componente que contém o que é mostrado assim que entra na página: Uma tela de boas vindas e os quadrinhos mais lidos_ |
 
-*Obs: O arquivo que contém as requisições HTTP é o:*
+**Obs: O arquivo que contém as requisições HTTP é o:**
 ```
 comics/comics.service.ts
 ```
+### Arquivos .CSS
+
+- As declarações de css que são necessários para elementos de várias páginas estão no arquivo **src/styles.css**
+- As declarações específicas dos seletores de um determinado componente estão no arquivo .css dentro do próprio componente
