@@ -16,6 +16,10 @@
             <p *ngIf="comic.creators.available > 0; else condicaoFalsa"><span *ngFor="let creator of comic.creators.items">{{creator.name}}; </span></p>
             <p class="title">Personagens</p>
             <p *ngIf="comic.characters.available > 0; else condicaoFalsa"><span *ngFor="let character of comic.characters.items">{{character.name}}; </span></p>
+            <p class="title">Formato</p>
+            <p *ngIf="comic.format != null; else condicaoFalsa">{{comic.format}}</p>
+            <p class="title">Quantidade de Páginas</p>
+            <p *ngIf="comic.pageCount > 0; else condicaoFalsa">{{comic.pageCount}}</p>
             <p class="title">Descrição</p>
             <p *ngIf="comic.description != null; else condicaoFalsa">{{comic.description}}</p>
             <ng-template #condicaoFalsa>

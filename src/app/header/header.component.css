@@ -14,6 +14,15 @@ div.collapsed {
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-header {
+        border-bottom: 1px solid;
+    }
+    .navbar-collapse {
+        box-shadow: none;
+    }
+}
+
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: dimgray;
 }

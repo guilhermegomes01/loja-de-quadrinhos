@@ -16,7 +16,6 @@ export class ComicsDetailComponent implements OnInit {
       .subscribe(
         response => {
           this.comic = response['data'].results;
-          console.log(this.comic);
         }
       )
   }
