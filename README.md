@@ -11,7 +11,7 @@ O projeto utiliza o framework [_Bootstrap_](https://getbootstrap.com/docs/3.3/).
 
 ## Servidor de Desenvolvimento
 
-Abra o terminal dentro da pasta o qual você colocou o projeto, então execute
+Após ter instalado o Angular e o Node, abra o terminal dentro da pasta o qual você colocou o projeto, então execute
 ```
 ng serve
 ```
