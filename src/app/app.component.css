@@ -1,0 +1,12 @@
+.content-wrapper {
+    background-color: #edeff3;
+    min-height: 60vh;
+}
+
+footer {
+    width: 100%;
+    background-color: #13171E;
+    color: white;
+    padding: 10px 0px;
+}
+

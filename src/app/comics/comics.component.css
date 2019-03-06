@@ -1,0 +1,9 @@
+.img-capa {
+    height: 280px;
+    margin: 0 auto;
+}
+
+.panel {
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(240, 236, 236, 0.87);
+}

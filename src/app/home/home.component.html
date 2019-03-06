@@ -1,0 +1,32 @@
+<div class="jumbotron welcome-jumbotron">
+  <h1>Bem vindo à Loja de Quadrinhos</h1>
+  <p>
+    Veja abaixo quais são os quadrinhos mais lidos no momento!
+  </p>
+  <!-- <a class="btn btn-primary btn-lg" href="main-restaurants.html">Ver Restaurantes</a> -->
+</div>
+
+<section class="content-header">
+  <h1>
+    Mais Lidos
+  </h1>
+</section>
+
+
+<section class="content">
+
+  <div class="comics-line row">
+    <div *ngFor="let comic of comics" class="col-md-3 col-sm-6 col-xs-12">
+      <a [routerLink]="['/comics', comic.id]">
+        <div class="panel panel-default">
+          <div class="panel-heading"><img class="img-capa img-responsive" src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}"></div>
+          <div class="panel-body">{{comic.title}}</div>
+        </div>
+      </a>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+  </div>
+
+</section>
+

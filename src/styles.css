@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.comics-line a{
+    color: black;
+}
+
+.comics-line a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-header h1 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    margin: 50px 0px 30px;
+}
+
+.panel {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.panel-heading {
+    background-color: transparent !important;
+    border-bottom: none;
+}
+
+.panel-body {
+    min-height: 96px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.img-capa {
+    margin: 0 auto;
+    height: 300px;
+}

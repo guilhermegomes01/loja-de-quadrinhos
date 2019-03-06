@@ -1,0 +1,31 @@
+<section class="content" *ngFor="let comic of comic">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">{{comic?.title}}</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="col-sm-3 col-xs-12" *ngIf="comic">
+            <img class="img-responsive" src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" alt="Capa do Quadrinho" />
+          </div>
+
+          <div class="col-sm-9 col-xs-12">
+            <p class="title">Criadores</p>
+            <p *ngIf="comic.creators.available > 0; else condicaoFalsa"><span *ngFor="let creator of comic.creators.items">{{creator.name}}; </span></p>
+            <p class="title">Personagens</p>
+            <p *ngIf="comic.characters.available > 0; else condicaoFalsa"><span *ngFor="let character of comic.characters.items">{{character.name}}; </span></p>
+            <p class="title">Descrição</p>
+            <p *ngIf="comic.description != null; else condicaoFalsa">{{comic.description}}</p>
+            <ng-template #condicaoFalsa>
+              <p>Não há dados disponíveis</p>
+            </ng-template>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+    <!-- /.col-xs-12 -->
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<header class="main-header">
+  <img src="assets/marvel-banner.png" class="img-responsive" alt="">
+  <nav class="navbar navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a [routerLink]="['/']" class="navbar-brand"><b>Loja de Quadrinhos</b></a>
+        <button (click)="navbarCollapse.classList.toggle('collapsed')" type="button" class="navbar-toggle collapsed">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse pull-left" #navbarCollapse>
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active"><a [routerLink]="['/comics']">Todos os Quadrinhos</a></li>
+          <li routerLinkActive="active"><a [routerLink]="['/lastReleases']">Últimos Lançamentos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

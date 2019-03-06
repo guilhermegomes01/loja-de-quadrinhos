@@ -1,0 +1,13 @@
+.box-title {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.content {
+    padding-bottom: 40px;
+}
+
+p.title {
+    font-weight: bold;
+    font-size: 15px;
+}

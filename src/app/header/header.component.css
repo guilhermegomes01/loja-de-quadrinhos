@@ -1,0 +1,23 @@
+header {
+    background-color: #1f1e1e;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+div.collapsed {
+    display: block;
+}
+
+.navbar a {
+    color: white;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: dimgray;
+}
+
+.icon-bar {
+    background-color: white;
+}

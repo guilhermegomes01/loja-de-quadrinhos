@@ -1,0 +1,25 @@
+<section class="content-header">
+  <h1>
+    Todos os Quadrinhos
+  </h1>
+</section>
+
+
+<section class="content">
+
+  <div class="comics-line row">
+    <div *ngFor="let comic of comics" class="col-md-3 col-sm-6 col-xs-12">
+      <a [routerLink]="['/comics', comic.id]">
+        <div class="panel panel-default">
+          <div class="panel-heading"><img class="img-capa img-responsive"
+              src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}"></div>
+          <div class="panel-body">{{comic.title}}</div>
+        </div>
+      </a>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+
+  </div>
+
+</section>
