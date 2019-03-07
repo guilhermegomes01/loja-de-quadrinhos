@@ -1,27 +1,43 @@
-# LojaQuadrinhos
+# Loja de Quadrinhos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 7.3.3.
 
-## Development server
+O projeto utiliza o framework [_Bootstrap_](https://getbootstrap.com/docs/3.3/). A versão instalada é a 3.3.7
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Arquivos/Programas necessários
 
-## Code scaffolding
+- É necessário ter o Angular e o Node.js instalados na máquina.
+- Para alterar o código, pode-se utilizar qualquer editor de texto ou IDE.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Servidor de Desenvolvimento
 
-## Build
+Após ter instalado o Angular e o Node, abra o terminal dentro da pasta o qual você colocou o projeto, então execute
+```
+ng serve
+```
+Isso irá iniciar um servidor na porta 4200. Navegue para 
+```
+http://localhost:4200/
+```
+A aplicação irá atualizar automaticamente à medida que for feito alterações
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Organização dos arquivos
 
-## Running unit tests
+Há 5 Componentes dentro da pasta **app/**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+| Pasta | Detalhes |
+| ----- | -------- |
+|comics/| _Esse é o componente onde fica a página que contém todos os quadrinhos_ |
+|comics-detail/| _É o componente onde fica a página que contém os detalhes de um determinado quadrinho, de acordo com seu ID_ |
+|comics-releases/| _Nesse contém o componente onde fica a página que mostra os últimos lançamentos da semana_ |
+|header/| _É o componente que contém a área onde fica a imagem principal e a navbar_ |
+|home/| _É o componente que contém o que é mostrado assim que entra na página: Uma tela de boas vindas e os quadrinhos mais lidos_ |
 
-## Running end-to-end tests
+**Obs: O arquivo que contém as requisições HTTP é o:**
+```
+comics/comics.service.ts
+```
+### Arquivos .CSS
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- As declarações de css que são necessários para elementos de várias páginas estão no arquivo **src/styles.css**
+- As declarações específicas dos seletores de um determinado componente estão no arquivo .css dentro do próprio componente
